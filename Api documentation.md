@@ -24,6 +24,7 @@
 - General: Register a new user and returns his data  
             with a genearted access token.
 - Sample : http://127.0.0.1:8000/api/register
+
     {
     "user": {
         "name": "rafali",
