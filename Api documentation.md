@@ -26,7 +26,9 @@
 - Sample : http://127.0.0.1:8000/api/register
 
     {
+    
     "user": {
+    
         "name": "rafali",
         "login": "omaf",
         "email": "rafali@gmail.com",
@@ -41,6 +43,7 @@
         "created_at": "2021-06-28T10:56:33.000000Z",
         "id": 3
     },
+    
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDNjMWMzNjZlOTg3ZGEyYjZkYTUxNzA5MGJiOGNjMjhkNjEyYzZmM2I2ODNlN2Q4ZWFjZTY0ZjEwMjBhZTZjZTYwNTI4NWJlZmQzZTFmNTciLCJpYXQiOjE2MjQ4Nzc3OTYuODI5NzQ5LCJuYmYiOjE2MjQ4Nzc3OTYuODI5Nzk5LCJleHAiOjE2NTY0MTM3OTYuNDQ5ODE0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.tFleJDu46UhKTwGZ15WPxacvhCv47VUoH39A5Nmi6VGemLxJp8SkagFZ4fBQDGnweo5bjuFQjUQ6fxas4NoVnzxdVtPRk_HiSwXfWjADg0zUbh8fgmyLNJo8MIsMbQNgn1ga_n7hhHPflpdWL0gfbEMParWjuUGOquWooynUzxsdaYagtlzUkuydnmzctAT1Dbqtmi5OgpzY4DubBWmjHMJ01jrRKM34WO5PUcF8Ud7hy4nF_nwcEElx98DsT16ZS-d853lQ9y4xhZp02YCwRAZTeXb8AfUSuu4cFP7PBl9LCet8bEBg8ns56DXWySS8ef_X8J0sDAmEaEyIMs2aZI58NqOm-TbIlcfJeWEqJgKGvIC0T3ZJYtX_QQ14ERN3SeQne5P778bd6-zv_4GhDFM505QGz0P5cdbLeuYdCYKJGolkHfd9lcFLHzzALsgzeh7dvtOrMULRayyf3pT6cuZUY1gr_xPoWSFWq4caWDsct-KSFFpfJl6rkTrCnAmaAgEs-a8DsJVc7YfhbUAo5afZH7GAKNj_efxPHP9Ss3jdJVPy_6jYkmMSLrJ5wROjJ3JRG4UgkvAzAvKyxNc_YPRTxSwSVRdbQE9gEPYBZSRGK8OY5AqZXJkwJeqBO2SVgQRC1ksLueqraCeP3YhWoKMjik9FWzF00AtBZhMa15k"
 }
 
