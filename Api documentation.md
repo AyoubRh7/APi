@@ -28,6 +28,7 @@
     {
     
     "user": {
+    
         "name": "rafali",
         "login": "omaf",
         "email": "rafali@gmail.com",
@@ -42,6 +43,7 @@
         "created_at": "2021-06-28T10:56:33.000000Z",
         "id": 3
     },
+    
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDNjMWMzNjZlOTg3ZGEyYjZkYTUxNzA5MGJiOGNjMjhkNjEyYzZmM2I2ODNlN2Q4ZWFjZTY0ZjEwMjBhZTZjZTYwNTI4NWJlZmQzZTFmNTciLCJpYXQiOjE2MjQ4Nzc3OTYuODI5NzQ5LCJuYmYiOjE2MjQ4Nzc3OTYuODI5Nzk5LCJleHAiOjE2NTY0MTM3OTYuNDQ5ODE0LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.tFleJDu46UhKTwGZ15WPxacvhCv47VUoH39A5Nmi6VGemLxJp8SkagFZ4fBQDGnweo5bjuFQjUQ6fxas4NoVnzxdVtPRk_HiSwXfWjADg0zUbh8fgmyLNJo8MIsMbQNgn1ga_n7hhHPflpdWL0gfbEMParWjuUGOquWooynUzxsdaYagtlzUkuydnmzctAT1Dbqtmi5OgpzY4DubBWmjHMJ01jrRKM34WO5PUcF8Ud7hy4nF_nwcEElx98DsT16ZS-d853lQ9y4xhZp02YCwRAZTeXb8AfUSuu4cFP7PBl9LCet8bEBg8ns56DXWySS8ef_X8J0sDAmEaEyIMs2aZI58NqOm-TbIlcfJeWEqJgKGvIC0T3ZJYtX_QQ14ERN3SeQne5P778bd6-zv_4GhDFM505QGz0P5cdbLeuYdCYKJGolkHfd9lcFLHzzALsgzeh7dvtOrMULRayyf3pT6cuZUY1gr_xPoWSFWq4caWDsct-KSFFpfJl6rkTrCnAmaAgEs-a8DsJVc7YfhbUAo5afZH7GAKNj_efxPHP9Ss3jdJVPy_6jYkmMSLrJ5wROjJ3JRG4UgkvAzAvKyxNc_YPRTxSwSVRdbQE9gEPYBZSRGK8OY5AqZXJkwJeqBO2SVgQRC1ksLueqraCeP3YhWoKMjik9FWzF00AtBZhMa15k"
 }
 
@@ -51,7 +53,9 @@
             and returns an access token if the data is correct .
 - Sample : http://127.0.0.1:8000/api/login
     {
+    
     "user": {
+    
         "id": 3,
         "login": "omaf",
         "name": "rafali",
@@ -66,6 +70,7 @@
         "compteState": "active",
         "role": "user",
     },
+    
     "access_token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjRlYjk5YzI4NmVkZGZlMDBiY2E0MjMyNGNlZWJjNWVhMmJhOTBjYmM2YzZhZDg1ZDVmNDM5MWE0ZGQ1OTFjZTg0ZDBhYWM4YzEwM2VlYTIiLCJpYXQiOjE2MjQ4ODI2MjkuMTQ0NzM3LCJuYmYiOjE2MjQ4ODI2MjkuMTQ0NzcyLCJleHAiOjE2NTY0MTg2MjguNjg1MDY3LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.lnpWdU6uZh5RYfkgajsK8IpREbJHdmz1ix8VIx3gMIutCq2kLdlnZ0paslCNOf1wUN9zKgrw_CXyuBwjvyV0oZFEGmUkA9_K_cyg3ZM1WqDOZGTAooT1T3xNOgoKcFjUrhny3C4BxbWEWX9UzPCRr1rSCABCIvUbpFFQMllZ420uxvUIkr_6te9tHCRP82vP95BkMF7sTHY7axUYqEFkvotA_cQmSFy0kyikO_jFxXDyFVIeGaF-X7al9om9-rStbyX3JVl8QFycElvyk_dIBEjazz97Zef9fLEhSU67aBMCHtQMjgHVXEVy2l-q9bruqeIb75tRj2dp7-QJDoMi0TXA50bG_vtq2I7ne-9qPQ4Sh9G_Pr_47yZ735hXd0ee3wxg4X5SXJkNJAbSvyRmAffCAtS9i8eufSONElWyflwpc0Cx6gqlywnT0j5mHhNoAXqKHrS3vQMqmgRJQBjKfzhy2MBKm4inEyLdn-0z2Dw4Qw6-_JibCKXj9Vxu-ppxV-n4bZ3oJhAi8ENfWAJAGaXcNoG5Da6Z8_dpvBBH9-NZgf57uf8hUw1l5nwRzHgQFACCxfj1VIxa7YIRe2blM-CO1aMbdlqNrg3X8XiipaWaep-DJrHyvjLNA1M2EeQMZbZWloVM8GatnjDdyOVI77I_rcZuqvDh0MaKvPK1R5U"
 }
 
@@ -74,6 +79,7 @@
 - General: Returns current user data.
 - Sample : http://127.0.0.1:8000/api/get_current_user
     "current_user": [
+    
         {
             "id": 1,
             "login": "ayoub78",
@@ -117,7 +123,9 @@
 - General: Returns a list of all categories
 - Sample : http://127.0.0.1:8000/api/categories
     {
+    
     "Categories": [
+    
         {
             "id": 1,
             "name": "Web Dev",
@@ -137,6 +145,7 @@
             "updated_at": "2021-06-10T20:46:00.000000Z"
         }
     ],
+    
     "Message": "Retrieved successfully"
 }
 
