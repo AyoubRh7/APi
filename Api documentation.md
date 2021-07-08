@@ -51,7 +51,7 @@
 
 - General: Verify the login data and the compte state
             and returns an access token if the data is correct .
-- Sample : http://127.0.0.1:8000/api/login
+- Sample : http://127.0.0.1:8000/api/login  
     {
     
     "user": {
@@ -77,7 +77,7 @@
 # POST /get_current_user
 
 - General: Returns current user data.
-- Sample : http://127.0.0.1:8000/api/get_current_user
+- Sample : http://127.0.0.1:8000/api/get_current_user  
     "current_user": [
     
         {
@@ -105,7 +105,7 @@
 
 # POST /Recover_password
 - General: Sends new password to user email .
-- Sample : http://127.0.0.1:8000/api/Recover_password
+- Sample : http://127.0.0.1:8000/api/Recover_password  
     {
     "message": "New password send successfully"
     }
@@ -121,7 +121,7 @@
 # GET /categories
 
 - General: Returns a list of all categories
-- Sample : http://127.0.0.1:8000/api/categories
+- Sample : http://127.0.0.1:8000/api/categories  
     {
     
     "Categories": [
@@ -152,61 +152,67 @@
 # GET /categories/<int:id_category>
 
 - General: Returns targeted category using the id passed in URL
-- Sample : http://127.0.0.1:8000/api/categories/1
-    {
+- Sample : http://127.0.0.1:8000/api/categories/1  
+    {  
     "Categorie": [
+    
         {
             "id": 1,
             "name": "Web Dev",
             "created_at": "2021-06-10 18:44:49",
             "updated_at": "2021-06-10 21:11:37"
         }
-    ],
+    ],    
     "Message": "Retrieved successfully"
 }
 
 # POST /categories
 
 - General: Creates a new category and returns its data  
-- Sample : http://127.0.0.1:8000/api/categories
-    {
-    "Categorie": {
+- Sample : http://127.0.0.1:8000/api/categories    
+    { 
+    
+    "Categorie": {  
+    
         "name": "cloud",
         "updated_at": "2021-06-28T13:32:08.000000Z",
         "created_at": "2021-06-28T13:32:08.000000Z",
         "id": 5
-    },
+    },   
     "Message": "Created successfully"
 }
 
-# PATCH /categories/<int:id_category>
+# PATCH /categories/<int:id_category>  
 
 - General: Updates the targeted category and returns the updated data  
 - Sample : http://127.0.0.1:8000/api/categories/1
-    {
+    {  
     "Categorie": {
+    
         "id": 1,
         "name": "Web devs",
         "created_at": "2021-06-10T18:44:49.000000Z",
         "updated_at": "2021-06-28T13:41:00.000000Z"
-    },
+    },  
     "message": "Updated successfully"
 }
 
 # DELETE /categories/<int:id_category>
 
 - General: Deletes the targeted category 
-- Sample : http://127.0.0.1:8000/api/categories/3
-    {
-    "Message": "Categorie Deleted succuessfully"
+- Sample : http://127.0.0.1:8000/api/categories/3  
+
+    {  
+    "Message": "Categorie Deleted succuessfully"  
     }
 
 # GET /clients
 
 - General: Returns a list of all clients
-- Sample : http://127.0.0.1:8000/api/clients
-    {
+- Sample : http://127.0.0.1:8000/api/clients  
+    {  
     "Clients": [
+    
         {
             "id": 2,
             "societe": "Ocp",
@@ -224,7 +230,7 @@
             "adresse": "25hay 1",
             "pays": "croitia",
             "biographie": "hakha"
-        },
+        },  
         {
             "id": 3,
             "societe": "Iam",
@@ -243,16 +249,17 @@
             "pays": "usa",
             "biographie": "walo walo"
         }
-    ],
+    ],  
     "Message": "Retrieved successfully"
 }
 
 # GET /clients/<int:id_client>
 
 - General: Returns targeted client using the id passed in URL
-- Sample :http://127.0.0.1:8000/api/clients/2
-    {
+- Sample :http://127.0.0.1:8000/api/clients/2  
+    {  
     "Client": [
+    
         {
             "id": 2,
             "societe": "Ocp",
@@ -271,16 +278,17 @@
             "pays": "croitia",
             "biographie": "hakha"
         }
-    ],
+    ],  
     "Message": "Retrieved successfully"
 }
 
 # POST /clients
 
 - General: Creates a new client and returns his data  
-- Sample : http://127.0.0.1:8000/api/clients
-    {
+- Sample : http://127.0.0.1:8000/api/clients  
+    {  
     "Client": {
+    
         "user_id": "2",
         "societe": "AfricaTrains",
         "type": "Pme",
@@ -290,16 +298,17 @@
         "updated_at": "2021-06-28T13:58:44.000000Z",
         "created_at": "2021-06-28T13:58:44.000000Z",
         "id": 5
-    },
+    },  
     "Message": "Client profile Created successfully"
 }
 
 # PATCH /clients/<int:id_client>
 
 - General: Updates the targeted client and returns the updated data  
-- Sample : http://127.0.0.1:8000/api/clients/2
-    {
+- Sample : http://127.0.0.1:8000/api/clients/2  
+    {  
     "Clients": {
+    
         "id": 2,
         "societe": "Msis",
         "EstActif": 1,
@@ -309,23 +318,24 @@
         "user_id": "2",
         "created_at": null,
         "updated_at": "2021-06-28T14:02:55.000000Z"
-    },
+    },  
     "message": "Updated successfully"
 }
 # DELETE /clients/<int:id_client>
 
 - General: Deletes the targeted client  
-- Sample : http://127.0.0.1:8000/api/clients/3
-    {
-    "Message": "Client Deleted succuessfully"
+- Sample : http://127.0.0.1:8000/api/clients/3  
+    {  
+    "Message": "Client Deleted succuessfully"  
     }
 
 # GET /freelancers
 
 - General: Returns a list of all freelancers
-- Sample : http://127.0.0.1:8000/api/freelancers
-    {
+- Sample : http://127.0.0.1:8000/api/freelancers   
+    {  
     "Freelancers": [
+    
         {
             "id": 1,
             "category": "coding",
@@ -340,7 +350,7 @@
             "adresse": "25hay 1",
             "pays": "croitia",
             "biographie": "hakha"
-        },
+        },  
         {
             "id": 2,
             "category": "design",
@@ -356,15 +366,16 @@
             "pays": "usa",
             "biographie": "walo walo"
         }
-    ],
-    "Message": "Retrieved successfully"
+    ],  
+    "Message": "Retrieved successfully"  
 }
 
 # GET /freelancers/<int:id_freelancer>
 
 - General: Returns targeted freelancer data using the id passed in URL
-- Sample : http://127.0.0.1:8000/api/freelancers/1
+- Sample : http://127.0.0.1:8000/api/freelancers/1  
     "Freelancer": [
+    
         {
             "id": 1,
             "category": "coding",
@@ -379,49 +390,52 @@
             "adresse": "25hay 1",
             "pays": "croitia",
             "biographie": "hakha"
-        }
-    ],
-    "Message": "Retrieved successfully"
+        }  
+    ],    
+    "Message": "Retrieved successfully"  
 }
 
 # POST /freelancers
 
 - General: Creates a new freelancer and returns his data  
-- Sample : http://127.0.0.1:8000/api/freelancers
-    {
+- Sample : http://127.0.0.1:8000/api/freelancers  
+    {  
     "Freelancer": {
+    
         "category": "cloud",
         "rating": "4",
         "user_id": "3",
         "updated_at": "2021-06-28T15:06:52.000000Z",
         "created_at": "2021-06-28T15:06:52.000000Z",
         "id": 3
-    },
-    "Message": "Created successfully"
+    },  
+    "Message": "Created successfully"  
 }
 
 # PATCH /freelancer/<int:id_freelancer>
 
 - General: Updates the targeted freelancer and returns the updated data 
-- Sample : http://127.0.0.1:8000/api/freelancers/2
-    {
+- Sample : http://127.0.0.1:8000/api/freelancers/2  
+    {  
     "freelancer": {
+    
         "id": 2,
         "category": "Motions Graphic",
         "rating": "2",
         "user_id": "2",
         "created_at": "2021-06-11T11:29:28.000000Z",
         "updated_at": "2021-06-28T15:08:50.000000Z"
-    },
-    "message": "Updated successfully"
+    },  
+    "message": "Updated successfully"  
 }
 
 # GET /get_freelancers_reviews
 
 - General: Returns all freelancers reviews  
-- Sample : http://127.0.0.1:8000/api/get_freelancers_reviews
-    {
+- Sample : http://127.0.0.1:8000/api/get_freelancers_reviews  
+    {  
     "freelancers with reviews": [
+    
         {
             "id": 1,
             "category": "coding",
@@ -449,24 +463,25 @@
             "updated_at": "2021-06-28T15:06:52.000000Z",
             "reviews": []
         }
-    ],
-    "Message": "Successfully retrieved"
+    ],  
+    "Message": "Successfully retrieved"  
     }
 
 # DELETE /freelancers/<int:id_freelancer>
 
 - General: Deletes the targeted freelancer
-- Sample : http://127.0.0.1:8000/api/freelancers/3
-    {
-    "Message": "Freelance Deleted succuessfully"
-    }
+- Sample : http://127.0.0.1:8000/api/freelancers/3  
+    {  
+    "Message": "Freelance Deleted succuessfully"  
+    }  
 
 #   GET /portfolios
 
 - General: Returns a list of all portflios
-- Sample : http://127.0.0.1:8000/api/portfolios
-    {
+- Sample : http://127.0.0.1:8000/api/portfolios  
+    {  
     "portfolios": [
+    
         {
             "id": 1,
             "diplomes": "Emci,It,iSTA",
@@ -476,16 +491,17 @@
             "created_at": "2021-06-11T11:31:43.000000Z",
             "updated_at": "2021-06-11T11:31:43.000000Z"
         }
-    ],
-    "Message": "Retrieved successfully"
-    }
+    ],  
+    "Message": "Retrieved successfully"  
+    }  
 
 # GET /portfolios/<int:id_portfolio>
 
 - General: Returns targeted portfolio data using the id passed in URL
 - Sample : http://127.0.0.1:8000/api/portfolios/1
-    {
+    {  
     "Portfolio": [
+    
         {
             "id": 1,
             "diplomes": "Emci,It,iSTA",
@@ -496,14 +512,15 @@
             "updated_at": "2021-06-11 11:31:43"
         }
     ],
-    "Message": "Retrieved successfully"
+    "Message": "Retrieved successfully"  
     }
 
 # POST /portfolios
 
 - General: Creates a new portfolio and returns its data
-- Sample : http://127.0.0.1:8000/api/portfolios
+- Sample : http://127.0.0.1:8000/api/portfolios  
     "Portfolio": {
+    
         "diplomes": "Isgi,It,iSTA",
         "experiences": "years and years",
         "projets_realiser": "uncountable",
@@ -511,16 +528,17 @@
         "updated_at": "2021-06-28T15:23:59.000000Z",
         "created_at": "2021-06-28T15:23:59.000000Z",
         "id": 3
-    },
-    "Message": "Portfolio Created successfully"
+    },  
+    "Message": "Portfolio Created successfully"  
 }
 
 # PATCH /portfolios/<int:id_portfolio>
 
 - General:  Updates the targeted portfolio and returns the updated data
-- Sample : http://127.0.0.1:8000/api/portfolios/3
-    {
+- Sample : http://127.0.0.1:8000/api/portfolios/3  
+    {  
     "portfolio": {
+    
         "id": 3,
         "diplomes": "ISGI",
         "experiences": "years and years",
@@ -528,23 +546,24 @@
         "freelancer_id": 2,
         "created_at": "2021-06-28T15:23:59.000000Z",
         "updated_at": "2021-06-28T15:30:28.000000Z"
-    },
-    "message": "Updated successfully"
+    },  
+    "message": "Updated successfully"  
 }
 
 # DELETE /portfolios/<int:id_portfolio>
 
 - General: Deletes the targeted portfolio
-- Sample : http://127.0.0.1:8000/api/portfolios/2
-    {
-    "Message": "Portfolio Deleted succuessfully"
-    }
+- Sample : http://127.0.0.1:8000/api/portfolios/2  
+    {  
+    "Message": "Portfolio Deleted succuessfully"  
+    }  
 
 # GET /posts
 - General: Returns a list of all posts
-- Sample : http://127.0.0.1:8000/api/posts
-    {
+- Sample : http://127.0.0.1:8000/api/posts  
+    {  
     "posts": [
+    
         {
             "title": "Backend developer needed",
             "name": "Web devs",
@@ -561,16 +580,17 @@
             "presentation": "salamo 3aliko",
             "statut": "In progress"
         }
-    ],
-    "Message": "Retrieved successfully"
+    ],  
+    "Message": "Retrieved successfully"  
     }
 
 # GET /posts/<int:id_post>
 
 - General: Returns targeted post data using the id passed in URL
-- Sample : http://127.0.0.1:8000/api/posts/1
-    {
+- Sample : http://127.0.0.1:8000/api/posts/1  
+    {  
     "post": [
+    
         {
             "title": "Backend developer needed",
             "name": "Web devs",
@@ -579,56 +599,59 @@
             "presentation": "salamo 3aliko",
             "statut": "In progress"
         }
-    ],
-    "Message": "Retrieved successfully"
+    ],  
+    "Message": "Retrieved successfully"  
 }
 
 # POST /posts
 
 - General: Creates a new post and returns its data
-- Sample : http://127.0.0.1:8000/api/posts
-    {
+- Sample : http://127.0.0.1:8000/api/posts  
+    {  
     "Post": {
+    
         "title": "FRONT developer wanted imediately",
         "projet_id": "2",
         "category_id": "4",
         "updated_at": "2021-06-28T17:03:45.000000Z",
         "created_at": "2021-06-28T17:03:45.000000Z",
         "id": 3
-    },
-    "Message": "Post Created successfully"
+    },  
+    "Message": "Post Created successfully"  
 }
 
 # PATCH /posts/<int:id_post>
 
 - General: Updates the targeted post and returns the updated data
-- Sample : http://127.0.0.1:8000/api/posts/1
-    {
+- Sample : http://127.0.0.1:8000/api/posts/1  
+    {  
     "post": {
+    
         "id": 1,
         "title": "Frontend developer wanted imediately",
         "projet_id": "2",
         "category_id": "4",
         "created_at": "2021-06-10T22:46:30.000000Z",
         "updated_at": "2021-06-28T17:09:08.000000Z"
-    },
-    "message": "Updated successfully"
+    },  
+    "message": "Updated successfully"  
 }
 
 # DELETE /posts/<int:id_post>
 
 - General: Deletes the targeted post
-- Sample : http://127.0.0.1:8000/api/posts/3
-    {
-    "Message": "Post Deleted succuessfully"
-    }
+- Sample : http://127.0.0.1:8000/api/posts/3  
+    {  
+    "Message": "Post Deleted succuessfully"  
+    }  
 
 # GET /projects
 
 - General: Returns a list of all projects
-- Sample : http://127.0.0.1:8000/api/projects
-   {
+- Sample : http://127.0.0.1:8000/api/projects  
+   {  
     "projects": [
+    
         {
             "id": 1,
             "name_projet": "test5",
@@ -651,17 +674,18 @@
             "created_at": "2021-06-10T22:44:37.000000Z",
             "updated_at": "2021-06-10T22:44:37.000000Z"
         }
-    ],
-    "message": "Retrieved successfully"
+    ],  
+    "message": "Retrieved successfully"  
 }
 
 
 # GET /projects/<int:id_project>
 
 - General:  Returns targeted project data using the id passed in URL
-- Sample : http://127.0.0.1:8000/api/projects/1
-    {
+- Sample : http://127.0.0.1:8000/api/projects/1  
+    {  
     "project": [
+    
         {
             "id": 1,
             "name_projet": "test5",
@@ -673,17 +697,18 @@
             "created_at": "2021-06-10 22:43:52",
             "updated_at": "2021-06-10 22:43:52"
         }
-    ],
-    "message": "Retrieved successfully"
+    ],  
+    "message": "Retrieved successfully"  
 }
 
 
 # POST /projects
 
 - General: Creates a new project and returns its data
-- Sample : http://127.0.0.1:8000/api/projects
-    {
+- Sample : http://127.0.0.1:8000/api/projects  
+    {  
     "project": {
+    
         "name_projet": "Albatros",
         "description": "easy",
         "categorie": "cloud",
@@ -693,16 +718,17 @@
         "updated_at": "2021-06-28T18:23:27.000000Z",
         "created_at": "2021-06-28T18:23:27.000000Z",
         "id": 3
-    },
-    "message": "Created successfully"
+    },  
+    "message": "Created successfully"  
 }
 
 # PATCH /projects/<int:id_project>
 
 - General:  Updates the targeted project and returns the updated data
-- Sample : http://127.0.0.1:8000/api/projects/3
-    {
+- Sample : http://127.0.0.1:8000/api/projects/3  
+    {  
     "project": {
+    
         "id": 3,
         "name_projet": "Mission impossible",
         "categorie": "gghy",
@@ -712,24 +738,25 @@
         "client_id": 3,
         "created_at": "2021-06-28T18:23:27.000000Z",
         "updated_at": "2021-06-28T18:27:39.000000Z"
-    },
-    "message": "Update successfully"
+    },  
+    "message": "Update successfully"  
 }
 
 # DELETE /projects/<int:id_project>
 
 - General:  Deletes the targeted project 
-- Sample : http://127.0.0.1:8000/api/projects/2
-    {
-    "message": "Deleted"
-    }   
+- Sample : http://127.0.0.1:8000/api/projects/2  
+    {  
+    "message": "Deleted"  
+    }     
 
 # GET /reclamations
 
 - General:  Returns a list of all reclamations
-- Sample : http://127.0.0.1:8000/api/reclamations
-    {
+- Sample : http://127.0.0.1:8000/api/reclamations  
+    {  
     "Reclamations": [
+    
         {
             "id": 1,
             "description": "Copyright violation",
@@ -748,16 +775,17 @@
             "created_at": "2021-06-11T21:42:37.000000Z",
             "updated_at": "2021-06-11T22:44:13.000000Z"
         }
-    ],
-    "Message": "Retrieved successfully"
+    ],  
+    "Message": "Retrieved successfully"  
 }
 
 # GET /reclamations/<int:id_reclamation>
 
 - General:  Returns targeted reclamation data using the id passed in URL
-- Sample : http://127.0.0.1:8000/api/reclamations/1
-    {
+- Sample : http://127.0.0.1:8000/api/reclamations/1  
+    {  
     "Reclamation": [
+    
         {
             "id": 1,
             "description": "Copyright violation",
@@ -767,16 +795,17 @@
             "created_at": "2021-06-11 21:42:16",
             "updated_at": "2021-06-11 21:42:16"
         }
-    ],
-    "Message": "Retrieved successfully"
+    ],  
+    "Message": "Retrieved successfully"  
 }
 
 # POST /reclamations
 
 - General:  Creates a new reclamation and returns its data
-- Sample : http://127.0.0.1:8000/api/reclamations
-    {
+- Sample : http://127.0.0.1:8000/api/reclamations  
+    {  
     "Reclamation": {
+    
         "description": "Site policy violation",
         "date": "2020-12-18",
         "type": "Seo",
@@ -784,16 +813,17 @@
         "updated_at": "2021-06-28T18:40:49.000000Z",
         "created_at": "2021-06-28T18:40:49.000000Z",
         "id": 4
-    },
-    "Message": "Reclmation Created successfully"
+    },  
+    "Message": "Reclmation Created successfully"  
 }
 
 # PATCH /reclamations/<int:id_reclamation>
 
 - General:  Updates the targeted reclamation and returns the updated data
-- Sample :http://127.0.0.1:8000/api/reclamations/2
-    {
+- Sample :http://127.0.0.1:8000/api/reclamations/2  
+    {  
     "reclamation": {
+    
         "id": 2,
         "description": "Seo violation",
         "date": "2021-12-18",
@@ -801,17 +831,17 @@
         "post_id": 1,
         "created_at": "2021-06-11T21:42:37.000000Z",
         "updated_at": "2021-06-28T18:42:37.000000Z"
-    },
-    "message": "Updated successfully"
+    },  
+    "message": "Updated successfully"  
 }
 
 # DELETE /reclamations/<int:id_reclamation>
 
 - General: Deletes the targeted reclamation 
-- Sample : http://127.0.0.1:8000/api/reclamations/2
-    {
-    "Message": "Reclamation Deleted succuessfully"
-    }   
+- Sample : http://127.0.0.1:8000/api/reclamations/2  
+    {  
+    "Message": "Reclamation Deleted succuessfully"  
+    }     
 
 
 
